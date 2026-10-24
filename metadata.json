@@ -1,0 +1,6 @@
+{
+  "name": "سراج - تايمر، مهام أسبوعية وتتبع الصلاة",
+  "description": "تطبيق إنتاجي إسلامي متكامل يجمع مؤقت التركيز، جدول المهام الأسبوعية، تتبع الصلوات والسنن، مع توليد الصور وتحريك الفيديو بالذكاء الاصطناعي.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

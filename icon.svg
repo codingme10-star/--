@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22" />
+      <stop offset="50%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="50%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+    <linearGradient id="emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Rounded Rect -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+
+  <!-- Subtle Inner Border -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="4" />
+
+  <!-- Glow effect -->
+  <circle cx="256" cy="230" r="140" fill="#10b981" opacity="0.15" filter="url(#glow)" />
+
+  <!-- Crescent Symbol (Spiritual & Focus) -->
+  <path d="M 330 140 A 100 100 0 1 1 210 260 A 85 85 0 0 0 330 140 Z" fill="url(#gold)" opacity="0.9" />
+
+  <!-- Medical Stethoscope Silhouette -->
+  <!-- Tubing loop -->
+  <path d="M 170 200 C 170 320, 310 320, 310 200" fill="none" stroke="url(#emerald)" stroke-width="20" stroke-linecap="round" />
+  
+  <!-- Lower Stethoscope extension -->
+  <path d="M 240 295 L 240 370" fill="none" stroke="url(#emerald)" stroke-width="20" stroke-linecap="round" />
+  
+  <!-- Chest piece / Bell -->
+  <circle cx="240" cy="390" r="28" fill="url(#gold)" stroke="#0f172a" stroke-width="6" />
+  <circle cx="240" cy="390" r="14" fill="#022c22" />
+
+  <!-- Earpieces -->
+  <circle cx="170" cy="190" r="12" fill="url(#emerald)" />
+  <circle cx="310" cy="190" r="12" fill="url(#emerald)" />
+
+  <!-- Academic / Doctor Star Accent -->
+  <polygon points="256,120 264,138 284,138 268,150 274,168 256,156 238,168 244,150 228,138 248,138" fill="url(#gold)" />
+</svg>

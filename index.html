@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Guarantee React Fast Refresh preamble hooks exist before any component modules evaluate
+      window.$RefreshReg$ = window.$RefreshReg$ || function () {};
+      window.$RefreshSig$ = window.$RefreshSig$ || function () { return function (type) { return type; }; };
+
+      // Gracefully handle harmless Vite HMR WebSocket connection drops in preview iframe
+      window.addEventListener('unhandledrejection', function (e) {
+        if (e && e.reason && (
+          (typeof e.reason.message === 'string' && e.reason.message.includes('WebSocket')) ||
+          (typeof e.reason === 'string' && e.reason.includes('WebSocket'))
+        )) {
+          e.preventDefault();
+        }
+      });
+      window.addEventListener('error', function (e) {
+        if (e && (
+          (typeof e.message === 'string' && e.message.includes('WebSocket')) ||
+          (e.error && typeof e.error.message === 'string' && e.error.message.includes('WebSocket'))
+        )) {
+          e.preventDefault();
+        }
+      });
+    </script>
+    <title>سراج - تايمر، مهام أسبوعية وتتبع الصلاة</title>
+    <meta name="description" content="تطبيق إنتاجي إسلامي متكامل يجمع مؤقت التركيز، جدول المهام الأسبوعية، تتبع الصلوات والسنن، مع توليد الصور وتحريك الفيديو بالذكاء الاصطناعي." />
+    <meta property="og:title" content="سراج - تايمر، مهام أسبوعية وتتبع الصلاة" />
+    <meta property="og:description" content="تطبيق إنتاجي إسلامي متكامل يجمع مؤقت التركيز، جدول المهام الأسبوعية، تتبع الصلوات والسنن، مع توليد الصور وتحريك الفيديو بالذكاء الاصطناعي." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#022c22" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="إنتاجية وطب" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen selection:bg-emerald-500/30 selection:text-emerald-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
